@@ -20,7 +20,7 @@ jobs:
           channel: stable
           flutter-version: 1.5.x
       - run: flutter pub get
-      - run: flutter build apk --release --target-platform=android-arm64 --no-shrink
+      - run: flutter build apk --release --target-platform=android-arm64
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
