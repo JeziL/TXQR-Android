@@ -16,6 +16,8 @@ jobs:
           distribution: 'zulu'
           java-version: 11
       - uses: subosito/flutter-action@v2.14.0
+        with:
+          flutter-version: 1.5.4
       - run: flutter pub get
       - run: flutter build apk --release --target-platform=android-arm64 --no-shrink
       - name: Upload APK
