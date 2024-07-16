@@ -1,9 +1,6 @@
 name: txqrfincrypt
 description: A new Flutter project.
 
-environment:
-  sdk: '1.5.4'
-
 dependencies:
   flutter:
     sdk: flutter
