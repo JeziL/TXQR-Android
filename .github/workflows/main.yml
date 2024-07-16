@@ -17,7 +17,8 @@ jobs:
           java-version: 11
       - uses: subosito/flutter-action@v2.14.0
         with:
-          flutter-version: v1.5.4-hotfix.2
+          channel: stable
+          flutter-version: 7a4c334
       - run: flutter pub get
       - run: flutter build apk --release --target-platform=android-arm64 --no-shrink
       - name: Upload APK
